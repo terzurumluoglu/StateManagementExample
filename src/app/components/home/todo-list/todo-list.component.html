@@ -1,0 +1,19 @@
+<h4 class="d-flex justify-content-between align-items-center mb-3">
+    <span class="text-muted">Your To Do List</span>
+    <span class="badge badge-secondary badge-pill">{{count$ | async}}</span>
+</h4>
+<ul class="list-group mb-3">
+    <li [class]="todo?.status ? 'list-group-item list-group-item-success' : 'list-group-item list-group-item-primary'"
+        *ngFor="let todo of todos$ | async">
+        <div class="row">
+            <div class="col-9">
+                <h6 class="my-0" [innerText]="todo?.title"></h6>
+                <small class="text-muted" [innerText]="todo?.description"></small>
+            </div>
+            <div class="col-3">
+                <button type="button" (click)="update(todo)" [class]="todo?.status ? 'btn btn-dark' : 'btn btn-success'"
+                    [innerText]="todo?.status ? 'Delete' : 'Done'"></button>
+            </div>
+        </div>
+    </li>
+</ul>

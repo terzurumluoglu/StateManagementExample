@@ -1,0 +1,16 @@
+
+    <form [formGroup]="todoForm" class="needs-validation" (ngSubmit)="submit()">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="firstName">Title</label>
+                <input type="text" formControlName="title" class="form-control" id="title" placeholder="" value="">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="lastName">Description</label>
+                <input type="text" formControlName="description" class="form-control" id="description" placeholder="" value="">
+            </div>
+        </div>
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Save</button>
+    </form>
