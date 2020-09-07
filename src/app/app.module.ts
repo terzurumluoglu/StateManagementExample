@@ -10,13 +10,15 @@ import { TodoListComponent } from './components/home/todo-list/todo-list.compone
 import { TodoAddComponent } from './components/home/todo-add/todo-add.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { TodoService } from './services/todo/todo.service';
+import { CountComponent } from './components/home/todo-list/count/count.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TodoListComponent,
-    TodoAddComponent
+    TodoAddComponent,
+    CountComponent
   ],
   imports: [
     BrowserModule,

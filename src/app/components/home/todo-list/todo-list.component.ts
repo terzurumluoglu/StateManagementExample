@@ -11,7 +11,6 @@ import { ToDo } from 'src/app/models/todo';
 export class TodoListComponent implements OnInit {
 
   todos$: Observable<ToDo[]> = this.todoService.todos$;
-  count$: Observable<number> = this.todoService.todoCount$;
   constructor(
     private todoService: TodoService
   ) { }
