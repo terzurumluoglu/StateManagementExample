@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "buildgit" : "ng build --prod --base-href https://terzurumluoglu.github.io/StateManagementExample/",
-    "deploygit" : "ngh --dir=dist/StateManagementExample"
+    "build-git" : "ng build --prod --base-href https://terzurumluoglu.github.io/StateManagementExample/",
+    "deploy-git" : "ngh --dir=dist/StateManagementExample"
   },
   "private": true,
   "dependencies": {
