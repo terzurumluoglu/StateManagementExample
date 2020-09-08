@@ -3,19 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
 import { StoreModule } from "@ngrx/store";
 import { AppReducers } from "./reducer/todos/reducer";
-import { TodoListComponent } from './components/home/todo-list/todo-list.component';
-import { TodoAddComponent } from './components/home/todo-add/todo-add.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { TodoAddComponent } from './components/todo-add/todo-add.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { TodoService } from './services/todo/todo.service';
-import { CountComponent } from './components/home/todo-list/count/count.component';
+import { CountComponent } from './components/todo-list/count/count.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     TodoListComponent,
     TodoAddComponent,
     CountComponent

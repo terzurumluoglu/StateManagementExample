@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { TodoService } from "../../../services/todo/todo.service";
+import { TodoService } from 'src/app/services/todo/todo.service';
 
 @Component({
   selector: 'app-todo-add',
